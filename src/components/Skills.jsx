@@ -55,7 +55,7 @@ export const Skills = () => {
       </Box>
       <Box sx={{ width: "700px" }}>
         <Grid
-          sx={{ backgroundColor: "gray", height: "400px" }}
+          sx={{position:"relative", backgroundColor: "#1f203b", height: "400px" }}
           container
           rowSpacing={2}
         >

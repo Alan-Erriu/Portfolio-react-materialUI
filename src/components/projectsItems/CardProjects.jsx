@@ -17,8 +17,8 @@ export const CardProjects = () => {
         <IconButton aria-label="add to favorites">
           <FavoriteIcon sx={{color:"red"}} />
         </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon sx={{color:"red"}}/>
+        <IconButton onClick={()=>console.log("test")} aria-label="share">
+          <ShareIcon   sx={{color:"red"}}/>
         </IconButton >
       </CardActions>
     </Card>
