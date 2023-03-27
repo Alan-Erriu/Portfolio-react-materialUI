@@ -1,0 +1,41 @@
+{
+    
+    "navbar-home":"Inicio",
+    "navbar-about":"Sobre mi",
+    "navbar-skills":"Habilidades",
+    "navbar-projects":"Proyectos",
+ 
+
+  "home-title": "Hola soy Alan Erriu, desarrollador Front-End",
+  "home-subtitle": "Desarrollador Front-End</>Programador",
+  
+
+  "about-title": "Sobre mi",
+  "about-first-paragraph": "Hola! Mi nombre es Alan Erriu, soy un Desarrollador FronT-End de 28 años de edad, residiendo en Buenos Aires, Argentina.",
+  
+  "skills-title": "Tecnologías",
+  "filter-all": "Todos",
+  "filter-programming": "Programación",
+  "filter-libraries": "Frameworks/Librerías",
+  "filter-design": "Diseño",
+  "filter-database": "Bases de datos",
+  "tooltip-basic": "Básico",
+  "tooltip-intermediate": "Intermedio",
+  "tooltip-advanced": "Avanzado",
+
+  "work-title": "Proyectos",
+  "project-technologies": "Tecnologías utilizadas:",
+  "project-site-btn": "Visitar Sitio",
+  "project-code-btn": "Código",
+
+  "contact-title": "Contacto",
+  "form-label": "Contácteme!",
+  "label-name": "Nombre completo",
+  "label-email": "Correo",
+  "label-subject": "Asunto",
+  "label-message": "Mensaje",
+  "send-btn": "Enviar",
+
+  "footer-design": "Diseñado en",
+  "footer-development": "Desarrollado en"
+}

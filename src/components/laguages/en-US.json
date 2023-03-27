@@ -1,0 +1,42 @@
+{
+  
+    "navbar-home": "Home",
+    "navbar-about": "About me",
+    "navbar-skills": "Skills",
+    "navbar-work": "My work",
+    
+  
+    "home-title": "Hi, i am Alan Erriu Front-End Developer",
+    "home-subtitle": "Front-End Developer</>Programmer",
+
+  
+    "about-title": "About me",
+    "about-first-paragraph": "Hi! My name is Alan Erriu, I am a 28 years old Software and Web Developer based in Buenos Aires, Argentina.",
+   
+  
+    "skills-title": "Tech Skills",
+    "filter-all": "All",
+    "filter-programming": "Programming",
+    "filter-libraries": "Frameworks/Libraries",
+    "filter-design": "Design",
+    "filter-database": "Database",
+    "tooltip-basic": "Basic",
+    "tooltip-intermediate": "Intermediate",
+    "tooltip-advanced": "Advanced",
+  
+    "work-title": "My work",
+    "project-technologies": "Used technologies:",
+    "project-site-btn": "Visit Site",
+    "project-code-btn": "Code",
+  
+    "contact-title": "Get in touch",
+    "form-label": "Contact me!",
+    "label-name": "Full Name",
+    "label-email": "E-Mail",
+    "label-subject": "Subject",
+    "label-message": "Message",
+    "send-btn": "Send",
+  
+    "footer-design": "Designed in",
+    "footer-development": "Developed in"
+  }

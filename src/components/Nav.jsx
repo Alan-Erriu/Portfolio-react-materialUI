@@ -10,6 +10,10 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import LogoAE from "./assets/LogoAe";
+import { FormattedMessage } from "react-intl";
+import { useContext } from "react";
+import { LanguagesContext } from "./context/LanguagesContext";
+
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,7 +25,7 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const {changeLangToEs,changeLangToEn} = useContext(LanguagesContext);
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
@@ -39,7 +43,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-           <LogoAE/>
+            <LogoAE />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -72,11 +76,24 @@ function ResponsiveAppBar() {
               }}
             >
               {/* -------------------------------------links mode toggle--------------------------------------------------- */}
-              <MenuItem onClick={handleCloseNavMenu}>Home</MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>Teclados</MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>Mouses</MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>Accesorios</MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>Carrito</MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <FormattedMessage id="navbar-home" defaultMessage="Inicio" />
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <FormattedMessage id="navbar-about" defaultMessage="Sobre mi" />
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <FormattedMessage
+                  id="navbar-skills"
+                  defaultMessage="Habilidades"
+                />
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <FormattedMessage
+                  id="navbar-projects"
+                  defaultMessage="Proyectos"
+                />
+              </MenuItem>
             </Menu>
             {/* ------------------------------------------------------------------------------------------------------------- */}
           </Box>
@@ -94,34 +111,50 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-           <LogoAE/>
+            <LogoAE />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-             Home
+              <FormattedMessage id="navbar-home" defaultMessage="Inicio" />
             </Button>
 
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              About me
+              <FormattedMessage id="navbar-about" defaultMessage="Sobre mi" />
             </Button>
 
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-             Tech skills
+              <FormattedMessage
+                id="navbar-skills"
+                defaultMessage="Habilidades"
+              />
+            </Button>
+            <Button onClick={changeLangToEn}>
+              <Typography variant="h4" color="initial">
+                español
+              </Typography>
+            </Button>
+            <Button onClick={changeLangToEs}>
+              <Typography variant="h4" color="initial">
+                ingles
+              </Typography>
             </Button>
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-             My works
+              <FormattedMessage
+                id="navbar-projects"
+                defaultMessage="Proyectos"
+              />
             </Button>
           </Box>
         </Toolbar>

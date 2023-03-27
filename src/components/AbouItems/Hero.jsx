@@ -1,20 +1,21 @@
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import logoAE from "../assets/logo.jpg"
+import alan from "../assets/alan.jpg";
 
-export const Hero =() => {
+export const Hero = () => {
   return (
     <Card sx={{ width: 345, height: 500 }}>
       <CardContent>
         <CardMedia
           component="img"
-          height="250"
-          image={logoAE}
+          height="100%"
+          
+          image={alan}
           alt="alan erriu"
         />
       </CardContent>
     </Card>
   );
-}
-export default Hero
+};
+export default Hero;

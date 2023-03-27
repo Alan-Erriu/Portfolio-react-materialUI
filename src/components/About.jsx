@@ -31,7 +31,14 @@ const About = () => {
             padding:"2rem"
           }}
         >
-        <Typography sx={{ width: "100%", backgroundColor:"#0f203b",position:"relative" }} variant="h2" color={"white"} fontSize="35px">
+        <Typography sx={{ width: "100%", backgroundColor:"#0f203b",position:"relative" }}
+        fontSize={{
+          xs: "15px",
+          sm: "25px",
+          md: "25px",
+          lg: "35px",
+          xl: "35px",
+        }} variant="h2" color={"white"}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
           rem modi nemo exercitationem, cum omnis maiores animi quia qui
           eligendi sint itaque explicabo? Dolor vel beatae optio esse facere
