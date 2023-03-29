@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material'
-import logo from "./logo.jpg"
+import logo from "./img/logo.jpg"
 
 
 const LogoAE = () => {

@@ -26,6 +26,8 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  //-----------------------------Context languages----------------
   const { changeLangToEs, changeLangToEn } = useContext(LanguagesContext);
   return (
     <AppBar position="fixed">

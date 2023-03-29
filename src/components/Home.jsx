@@ -10,7 +10,7 @@ const Home = () => {
         textAlign={"center"}
         fontFamily={"fantasy"}
         variant="h1"
-        color="white"
+        color="gray"
         fontSize={{
           xs: "50px",
           sm: "50px",
@@ -25,7 +25,7 @@ const Home = () => {
         textAlign={"center"}
         fontFamily={"fantasy"}
         variant="h3"
-        color="white"
+        color="gray"
         fontSize={{
           xs: "25px",
           sm: "30px",
