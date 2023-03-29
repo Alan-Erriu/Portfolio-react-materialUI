@@ -1,7 +1,7 @@
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import alan from "../assets/alan.jpg";
+import alan from "../assets/svg/alan.jpg";
 
 export const Hero = () => {
   return (

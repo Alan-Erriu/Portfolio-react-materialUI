@@ -2,15 +2,32 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import  {LanguagesProvider} from "./components/context/LanguagesContext"
-// import esMX from "./components/laguages/es-MX.json";
-// import enUS from "./components/laguages/en-US.json";
-// import { IntlProvider } from "react-intl";
+import { LanguagesProvider } from "./components/context/LanguagesContext";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    type: "light",
+    primary: {
+      main: "#0f203b",
+      light: "#ff5ca0",
+    },
+    secondary: {
+      main: "#f30656",
+    },
+    success: {
+      main: "#00352c",
+      dark: "#004d40",
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <LanguagesProvider>
-      <App />
-    </LanguagesProvider>
+    <ThemeProvider theme={theme}>
+      <LanguagesProvider>
+        <App />
+      </LanguagesProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );

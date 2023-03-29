@@ -9,11 +9,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import LogoAE from "./assets/LogoAe";
+import LogoAE from "./assets/svg/LogoAe";
 import { FormattedMessage } from "react-intl";
 import { useContext } from "react";
 import { LanguagesContext } from "./context/LanguagesContext";
-
+import Spain from "./assets/svg/Spain";
+import Usa from "./assets/svg/Usa";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,7 +26,7 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const {changeLangToEs,changeLangToEn} = useContext(LanguagesContext);
+  const { changeLangToEs, changeLangToEn } = useContext(LanguagesContext);
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
@@ -77,23 +78,26 @@ function ResponsiveAppBar() {
             >
               {/* -------------------------------------links mode toggle--------------------------------------------------- */}
               <MenuItem onClick={handleCloseNavMenu}>
-                <FormattedMessage id="navbar-home" defaultMessage="Inicio" />
+                <FormattedMessage id="navbar-home" defaultMessage="Home" />
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <FormattedMessage id="navbar-about" defaultMessage="Sobre mi" />
+                <FormattedMessage id="navbar-about" defaultMessage="About me" />
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                <FormattedMessage
-                  id="navbar-skills"
-                  defaultMessage="Habilidades"
-                />
+                <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <FormattedMessage
                   id="navbar-projects"
-                  defaultMessage="Proyectos"
+                  defaultMessage="Projects"
                 />
               </MenuItem>
+              <Button onClick={changeLangToEn}>
+                <Usa />
+              </Button>
+              <Button onClick={changeLangToEs}>
+                <Spain />
+              </Button>
             </Menu>
             {/* ------------------------------------------------------------------------------------------------------------- */}
           </Box>
@@ -118,34 +122,21 @@ function ResponsiveAppBar() {
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <FormattedMessage id="navbar-home" defaultMessage="Inicio" />
+              <FormattedMessage id="navbar-home" defaultMessage="Home" />
             </Button>
 
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <FormattedMessage id="navbar-about" defaultMessage="Sobre mi" />
+              <FormattedMessage id="navbar-about" defaultMessage="About me" />
             </Button>
 
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <FormattedMessage
-                id="navbar-skills"
-                defaultMessage="Habilidades"
-              />
-            </Button>
-            <Button onClick={changeLangToEn}>
-              <Typography variant="h4" color="initial">
-                español
-              </Typography>
-            </Button>
-            <Button onClick={changeLangToEs}>
-              <Typography variant="h4" color="initial">
-                ingles
-              </Typography>
+              <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
             </Button>
             <Button
               onClick={handleCloseNavMenu}
@@ -153,10 +144,22 @@ function ResponsiveAppBar() {
             >
               <FormattedMessage
                 id="navbar-projects"
-                defaultMessage="Proyectos"
+                defaultMessage="Projects"
               />
             </Button>
           </Box>
+          <Button
+            sx={{ display: { xs: "none", md: "flex" } }}
+            onClick={changeLangToEn}
+          >
+            <Usa />
+          </Button>
+          <Button
+            sx={{ display: { xs: "none", md: "flex" } }}
+            onClick={changeLangToEs}
+          >
+            <Spain />
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>
