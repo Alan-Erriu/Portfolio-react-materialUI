@@ -2,40 +2,83 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FormattedMessage } from "react-intl";
+import { Button } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{ display: "flex", marginTop: "10rem", justifyContent: "center",flexDirection:"column" }}>
-      <Typography
-        textAlign={"center"}
-        fontFamily={"fantasy"}
-        variant="h1"
-        color="gray"
-        fontSize={{
-          xs: "50px",
-          sm: "50px",
-          md: "50px",
-          lg: "60px",
-          xl: "70px",
+    <Box id="home" sx={{ display: "flex", justifyContent: "center" }}>
+      <Box
+        sx={{
+          display: "flex",
+          marginTop: "10rem",
+          justifyContent: "center",
+          flexDirection: "column",
+          width: { xs: "90%", md: "600px" },
         }}
       >
-    <FormattedMessage id="home-title" defaultMessage="Hi, i am Alan Erriu Front-End Developer" />
-      </Typography>
-      <Typography
-        textAlign={"center"}
-        fontFamily={"fantasy"}
-        variant="h3"
-        color="gray"
-        fontSize={{
-          xs: "25px",
-          sm: "30px",
-          md: "30px",
-          lg: "40px",
-          xl: "50px",
-        }}
-      >
-    <FormattedMessage id="home-subtitle" defaultMessage="Desarrollador Front-End/Programador" />
-    </Typography>
+        <Typography
+          textAlign={"center"}
+          fontFamily={"fantasy"}
+          variant="h1"
+          color="gray"
+          fontSize={{
+            xs: "50px",
+            sm: "50px",
+            md: "50px",
+            lg: "60px",
+            xl: "70px",
+          }}
+        >
+          <FormattedMessage
+            id="home-title"
+            defaultMessage="Hi, i am Alan Erriu"
+          />
+        </Typography>
+        <Typography
+          textAlign={"center"}
+          fontFamily={"fantasy"}
+          variant="h3"
+          color="gray"
+          fontSize={{
+            xs: "25px",
+            sm: "30px",
+            md: "30px",
+            lg: "40px",
+            xl: "50px",
+          }}
+        >
+          <FormattedMessage
+            id="home-subtitle"
+            defaultMessage="Desarrollador Front-End/Programador"
+          />
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "10px",
+            mt: "10px",
+          }}
+        >
+          <a style={{textDecoration:"none"}} href="cv Alan Erriu.pdf"
+          download="cv Alan Erriu.pdf">
+            <Button
+              sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+              variant="contained"
+              color="success"
+            >
+              <Typography color={"white"}>Dowload my cv</Typography>
+            </Button>
+          </a>
+          <Button
+            sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+            variant="contained"
+            color="success"
+          >
+            <Typography color={"white"}>My linkedin</Typography>
+          </Button>
+        </Box>
+      </Box>
     </Box>
   );
 };

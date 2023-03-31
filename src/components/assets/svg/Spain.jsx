@@ -4,7 +4,7 @@ import spain from "./img/spain.png";
 
 const Spain = () => {
   return(
-    <Avatar variant="square" alt="spain" src={spain} sx={{ width: 50, height: 50 }} />
+    <Avatar variant="square" alt="spain" src={spain} sx={{ width: 50, height: 50}} />
     ) 
 };
 

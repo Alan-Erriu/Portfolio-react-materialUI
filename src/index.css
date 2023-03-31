@@ -1,15 +1,18 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-img{
+img {
   width: 100%;
 }
-.imgProject{
+.imgProject {
   width: 100%;
   object-fit: contain;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,4 +24,3 @@ body {
   flex-flow: column nowrap;
   background-attachment: fixed;
 }
-

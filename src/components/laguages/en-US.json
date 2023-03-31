@@ -6,7 +6,7 @@
     "navbar-projects": "Projects",
     
   
-    "home-title": "Hi, i am Alan Erriu Front-End Developer",
+    "home-title": "Hi, i am Alan Erriu",
     "home-subtitle": "Front-End Developer</>Programmer",
 
   
@@ -28,6 +28,15 @@
     "project-technologies": "Used technologies:",
     "project-site-btn": "Visit Site",
     "project-code-btn": "Code",
+    "project-title-aeimportaciones": "AE.IMPORTS",
+    "project-description-aeimportaciones": "Pc peripherals and accessories store.",
+    "project-title-fontendMentor": "E-Commerce React Challenge",
+    "project-description-fontendMentor": "Men's shoe store.",
+    "project-title-crud": "CRUD MERN STACK",
+    "project-description-crud": "Simple app to create products and save them in a database.",
+    "project-title-portfolio": "Personal Portfolio",
+    "project-description-portfolio": "This personal portfolio site.",
+    
   
     "contact-title": "Get in touch",
     "form-label": "Contact me!",

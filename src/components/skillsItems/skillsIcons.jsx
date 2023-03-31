@@ -1,14 +1,18 @@
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import Typography from '@mui/material/Typography'
+import Typography from "@mui/material/Typography";
+import { Avatar } from "@mui/material";
+import { Box } from "@mui/system";
 
-const skillsIcons = ({ img: img }) => {
+const skillsIcons = ({ desc:desc }) => {
   return (
-    <Card sx={{height:"70px"}}>
-      <CardMedia component="img" height="100%" image={img} alt="alan erriu" />
-      <Typography variant="h6" color="initial">react</Typography>
-    </Card>
+    <Box sx={{display:"flex",flexDirection:"column", alignItems:"center"}}> 
+      <Avatar
+        variant="square"
+        alt="unitedkingdom"
+        src={desc.img}
+        sx={{ width: 50, height: 50 ,backgroundColor:"white"}}
+      />
+      <Typography textAlign={"center"} color={"white"}>{desc.text}</Typography>
+    </Box>
   );
 };
 

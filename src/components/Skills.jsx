@@ -3,78 +3,90 @@ import Box from "@mui/material/Box";
 import SkillsIcons from "./skillsItems/skillsIcons";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import { useState } from "react";
+import { Button } from "@mui/material";
+import { frontEndIcons, backEndIcons, allIcons } from "./skillsItems/iconState";
 
-const imgReat =
-  "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg";
-const imgJs =
-  "https://profilinator.rishav.dev/skills-assets/javascript-original.svg";
-const imgTS =
-  "https://profilinator.rishav.dev/skills-assets/typescript-original.svg";
-const imgMongodb =
-  "https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg";
-const imgPy =
-  "https://profilinator.rishav.dev/skills-assets/python-original.svg";
-const imgExpress =
-  "https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg";
-const imgNodeJs =
-  "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg";
-const imgTailwind =
-  "https://profilinator.rishav.dev/skills-assets/tailwindcss.svg";
-const imgMaterialUi = "https://profilinator.rishav.dev/skills-assets/mui.png";
-const imgRedux =
-  "https://profilinator.rishav.dev/skills-assets/redux-original.svg";
-const imgDjango =
-  "https://profilinator.rishav.dev/skills-assets/django-original.svg";
-const imgPostgre =
-  "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg";
+
 
 export const Skills = () => {
-  const images = [
-    imgReat,
-    imgJs,
-    imgTS,
-    imgMongodb,
-    imgPy,
-    imgExpress,
-    imgNodeJs,
-    imgTailwind,
-    imgMaterialUi,
-    imgRedux,
-    imgDjango,
-    imgPostgre,
-  ];
+  // render of icons in skill box-----------------
+  const [icons, setIcons] = useState(allIcons);
 
   return (
+    <Box id="skills" sx={{display:"flex",justifyContent:"center"}}>
     <Box
-      sx={{ display: "flex", alignItems: "center", flexDirection: "column",mt:"10rem" }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        mt: "10rem",
+        width:{xs:"90%",md:"600px"}
+      }}
     >
       <Box>
-        <Typography variant="h3" fontSize="150px" color="white" fontFamily="fantasy">
+        <Typography variant="h3" fontSize="100px" color="white">
           Skills
         </Typography>
       </Box>
-      <Box sx={{ width: "700px" }}>
-        <Grid
-          sx={{position:"relative", backgroundColor: "#1f203b", height: "400px" }}
-          container
-          rowSpacing={2}
+      <Box sx={{ display: "flex", gap: "20px", mb: "1rem" }}>
+        {/* allIcons is a new state now ---------------------*/}
+        <Button
+          onClick={() => setIcons(allIcons)}
+          sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+          variant="contained"
+          color="success"
         >
-          {images.map((i) => (
-            <Grid key={i} item xs={3} sm={3} md={3} lg={3} xl={4}>
+          <Typography color={"white"}>All-Skills</Typography>
+        </Button>
+        {/* backend is a new state now ---------------------*/}
+        <Button
+          onClick={() => setIcons(backEndIcons)}
+          sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+          variant="contained"
+          color="success"
+        >
+          <Typography color={"white"}>Back-End</Typography>
+        </Button>
+        {/* frontEndIcons is a new state now--------------------- */}
+        <Button
+          onClick={() => setIcons(frontEndIcons)}
+          sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+          variant="contained"
+          color="success"
+        >
+          <Typography color={"white"}>front-End</Typography>
+        </Button>
+      </Box>
+      <Box sx={{ width:{xs:"90%",md:"600px"} , height:{xs:"90%",md:"500px"} }}>
+        <Grid
+          sx={{
+            position: "relative",
+            backgroundColor: "#3E2B47",
+            height: "400px",
+            boxShadow: " 0 0 2px 4px",
+          }}
+          container
+          rowSpacing={1}
+        >
+          {icons.map((desc, i) => (
+            <Grid key={i} item xs={2} sm={2} md={2} lg={2} xl={2}>
               <Box
                 sx={{
-                  justifyContent: "center",
                   display: "flex",
+                  justifyContent: "center",
                   alignItems: "center",
                   xs: "colunm",
+                  mt: "3rem",
                 }}
               >
-                <SkillsIcons img={i} />
+                <SkillsIcons desc={desc} />
               </Box>
             </Grid>
           ))}
         </Grid>
       </Box>
+    </Box>
     </Box>
   );
 };

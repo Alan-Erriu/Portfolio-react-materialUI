@@ -6,7 +6,7 @@
     "navbar-projects":"Proyectos",
  
 
-  "home-title": "Hola soy Alan Erriu, desarrollador Front-End",
+  "home-title": "Hola soy Alan Erriu",
   "home-subtitle": "Desarrollador Front-End</>Programador",
   
 
@@ -27,7 +27,17 @@
   "project-technologies": "Tecnologías utilizadas:",
   "project-site-btn": "Visitar Sitio",
   "project-code-btn": "Código",
+  "project-title-aeimportaciones": "AE.IMPORTACIONES",
+  "project-description-aeimportaciones": "Tienda de periféricos y accesorios para pc.",
+  "project-title-fontendMentor": "Tienda digital React",
+  "project-description-fontendMentor": "Tienda de zapatillas para hombres. El diseño pertenece a frontendmentor.com.",
+  "project-title-crud": "CRUD MERN STACK",
+  "project-description-crud": "Aplicación para crear productos y almacenarlos en una base de datos.",
+  "project-title-portfolio": "Portafolio personal",
+  "project-description-portfolio": "Esta página web.",
 
+ 
+ 
   "contact-title": "Contacto",
   "form-label": "Contácteme!",
   "label-name": "Nombre completo",

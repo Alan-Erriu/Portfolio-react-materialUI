@@ -19,16 +19,27 @@ import Usa from "./assets/svg/Usa";
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
+  // open menu mobile
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
+  // close menu mobile
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
   //-----------------------------Context languages----------------
   const { changeLangToEs, changeLangToEn } = useContext(LanguagesContext);
+  //this function is for close menu mobile and change language to spanish
+  const closeMenuAndChangeToES = () => {
+    changeLangToEs();
+    handleCloseNavMenu();
+  };
+  //this function is for close menu mobile and change language to english
+  const closeMenuAndChangeToEn = () => {
+    changeLangToEn();
+    handleCloseNavMenu();
+  };
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
@@ -46,7 +57,9 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
+            <a style={{ textDecoration: "none" }} href="#home">
             <LogoAE />
+            </a>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -78,30 +91,56 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {/* -------------------------------------links mode toggle--------------------------------------------------- */}
-              <MenuItem onClick={handleCloseNavMenu}>
-                <FormattedMessage id="navbar-home" defaultMessage="Home" />
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* -------------------------------------links mode mobile--------------------------------------------------- */}
+              <a style={{ textDecoration: "none" }} href="#home">
+                <Button
+                  sx={{ width: "100%" }}
+                  variant="text"
+                  onClick={handleCloseNavMenu}
+                >
+                  <FormattedMessage id="navbar-home" defaultMessage="Home" />
+                </Button>
+              </a>
+              <a style={{ textDecoration: "none" }} href="#aboutMe">
+              <Button
+                sx={{ width: "100%" }}
+                variant="text"
+                onClick={handleCloseNavMenu}
+              >
                 <FormattedMessage id="navbar-about" defaultMessage="About me" />
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              </Button>
+              </a>
+              <a style={{ textDecoration: "none" }} href="#skills">
+              <Button
+                sx={{ width: "100%" }}
+                variant="text"
+                onClick={handleCloseNavMenu}
+              >
                 <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              </Button>
+              </a>
+              <a style={{ textDecoration: "none" }} href="#projects">
+              <Button
+                sx={{ width: "100%" }}
+                variant="text"
+                onClick={handleCloseNavMenu}
+              >
                 <FormattedMessage
                   id="navbar-projects"
                   defaultMessage="Projects"
                 />
-              </MenuItem>
-              <Button onClick={changeLangToEn}>
-                <Usa />
               </Button>
-              <Button onClick={changeLangToEs}>
-                <Spain />
-              </Button>
+              </a>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <MenuItem onClick={closeMenuAndChangeToEn}>
+                  <Usa />
+                </MenuItem>
+                <MenuItem onClick={closeMenuAndChangeToES}>
+                  <Spain />
+                </MenuItem>
+              </Box>
             </Menu>
-            {/* ------------------------------------------------------------------------------------------------------------- */}
+            {/* --------------------------------------------end links mode mobile-------------------------------------------------- */}
           </Box>
           <Typography
             variant="h5"
@@ -112,43 +151,53 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: "3rem",
               color: "inherit",
               textDecoration: "none",
+              p:"5px"
             }}
           >
+            <a style={{ textDecoration: "none" }} href="#home">
             <LogoAE />
+            </a>
+            {/*--------------------- Links mode  desktop---------------------------------------------------------------------------- */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <FormattedMessage id="navbar-home" defaultMessage="Home" />
-            </Button>
-
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <FormattedMessage id="navbar-about" defaultMessage="About me" />
-            </Button>
-
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
-            </Button>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <FormattedMessage
-                id="navbar-projects"
-                defaultMessage="Projects"
-              />
-            </Button>
+            <a style={{ textDecoration: "none" }} href="#home">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <FormattedMessage id="navbar-home" defaultMessage="Home" />
+              </Button>
+            </a>
+            <a style={{ textDecoration: "none" }} href="#aboutMe">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <FormattedMessage id="navbar-about" defaultMessage="About me" />
+              </Button>
+            </a>
+            <a style={{ textDecoration: "none" }} href="#skills">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
+              </Button>
+            </a>
+            <a style={{ textDecoration: "none" }} href="#projects">
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <FormattedMessage
+                  id="navbar-projects"
+                  defaultMessage="Projects"
+                />
+              </Button>
+            </a>
           </Box>
           <Button
             sx={{ display: { xs: "none", md: "flex" } }}
@@ -162,6 +211,7 @@ function ResponsiveAppBar() {
           >
             <Spain />
           </Button>
+          {/*--------------------- end Links mode  desktop---------------------------------------------------------------------------- */}
         </Toolbar>
       </Container>
     </AppBar>
