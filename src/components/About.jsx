@@ -6,7 +6,7 @@ import { FormattedMessage } from "react-intl";
 
 const About = () => {
   return (
-    <Box sx={{pt:"10rem"}} id="aboutMe">
+    <Box sx={{ pt: "10rem" }}>
       <Grid sx={{ mb: "20rem" }} container>
         <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
           <Box
@@ -28,7 +28,6 @@ const About = () => {
               justifyContent: "center",
               alignItems: "center",
               xs: "colunm",
-              mt: "7rem",
               padding: "2rem",
             }}
           >
@@ -37,6 +36,7 @@ const About = () => {
                 width: "100%",
                 backgroundColor: "#0f203b",
                 position: "relative",
+                pt: "4rem",
               }}
               fontSize={{
                 xs: "15px",
@@ -48,7 +48,7 @@ const About = () => {
               variant="h2"
               color={"white"}
             >
-              <FormattedMessage id="about-title" defaultMessage="About me" />{" "}
+              <FormattedMessage id="about-title" defaultMessage="About me" />
               <br />
               <br />
               <FormattedMessage

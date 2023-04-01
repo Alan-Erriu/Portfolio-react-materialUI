@@ -18,12 +18,12 @@ export const CardProjects = ({
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-       
+        width: { xs: "100%", sm: "100%", md: "90%" },
       }}
     >
       <Card
         sx={{
-          width: {xs:"90%",md:"400px"},
+          width: { xs: "90%", sm: "70%", md: "400px" },
           height: 400,
           mt: "5rem",
           backgroundColor: "#0f203b",
@@ -43,49 +43,53 @@ export const CardProjects = ({
         sx={{
           position: "relative",
           backgroundColor: "#0f203b",
-          height: {xs:"90%",md:"400px"},
-          width: {xs:"90%",md:"400px"},
-          mt: "9rem",
-          ml: "3rem",
-          justifyContent:"center"
+          width: { xs: "90%", sm: "70%", md: "400px" },
+          mt: "2rem",
+          ml: { md: "4rem" },
+          justifyContent: "center",
+
+          textAlign: "start",
         }}
       >
-        <Typography
-          sx={{ width: {xs:"200px",md:"600px"}, mb: "2rem" }}
-          variant="h4"
-          color="white"
-          fontSize="30px"
-          textAlign="center"
-        >
+        <Typography fontSize={"30px"} variant="h3" color="white">
           {title}
-          <hr />
         </Typography>
+
         <Typography
-          sx={{ width: {xs:"200px",md:"600px"} }}
+          sx={{ mt: "1rem" }}
           variant="h4"
           color="white"
           fontSize="20px"
-          textAlign="center"
         >
           {description}
         </Typography>
         <Typography
-          sx={{ width: {xs:"200px",md:"600px"}, mt: "1rem" }}
+          sx={{ mt: "1rem", color: "green" }}
           variant="h4"
           color="white"
           fontSize="20px"
-          textAlign="center"
         >
           <FormattedMessage
             id="project-technologies"
             defaultMessage="Used technologies:"
-          />{" "}
-          <br />
+          />
+        </Typography>
+        <Typography
+          sx={{ mt: "1rem" }}
+          variant="h4"
+          color="white"
+          fontSize="20px"
+        >
           {technologies}
         </Typography>
         <CardActions
           disableSpacing
-          sx={{ display:"flex",gap: "30px", mt: "1rem", justifyContent: "center",alignItems:"center" }}
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            gap: "30px",
+            mt: "1rem",
+          }}
         >
           {/* this ternaries is for not place a this button in the porforlio personal.  */}
           {linkToDeploy ? ( //start ternaries
@@ -99,9 +103,18 @@ export const CardProjects = ({
                 color="success"
                 sx={{ boxShadow: " 0 0 0 4px", color: "black" }}
               >
-                <Box sx={{display:"flex", gap:"5px"}}>
-                <LanguageIcon sx={{ color: "white" }} />
-                <Typography color={"white"}>Site</Typography>
+                <Box sx={{ display: "flex", gap: "5px" }}>
+                  <Typography
+                    sx={{ display: "flex", gap: "5px", alignItems: "center" }}
+                    fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
+                    color={"white"}
+                  >
+                    <LanguageIcon />
+                    <FormattedMessage
+                      id="project-site-btn"
+                      defaultMessage="Site"
+                    />
+                  </Typography>
                 </Box>
               </Button>
             </Link>
@@ -116,12 +129,21 @@ export const CardProjects = ({
             <Button
               variant="contained"
               color="success"
-              
               sx={{ boxShadow: " 0 0 0 4px", color: "black" }}
             >
-              <Box sx={{display:"flex", gap:"5px"}}>
-                <GitHubIcon sx={{ color: "white" }} />
-                <Typography color={"white"}>code</Typography>
+              <Box>
+                <Typography
+                  sx={{ display: "flex", gap: "5px", alignItems: "center" }}
+                  fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
+                  color={"white"}
+                >
+                 
+                  <GitHubIcon />
+                  <FormattedMessage
+                    id="project-code-btn"
+                    defaultMessage="Code"
+                  />
+                </Typography>
               </Box>
             </Button>
           </Link>

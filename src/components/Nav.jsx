@@ -15,6 +15,7 @@ import { useContext } from "react";
 import { LanguagesContext } from "./context/LanguagesContext";
 import Spain from "./assets/svg/Spain";
 import Usa from "./assets/svg/Usa";
+import { Link } from "react-router-dom";
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -42,8 +43,8 @@ function ResponsiveAppBar() {
   };
   return (
     <AppBar position="fixed">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+      <Container  maxWidth="xl">
+        <Toolbar  disableGutters>
           <Typography
             variant="h6"
             noWrap
@@ -58,7 +59,7 @@ function ResponsiveAppBar() {
             }}
           >
             <a style={{ textDecoration: "none" }} href="#home">
-            <LogoAE />
+              <LogoAE />
             </a>
           </Typography>
 
@@ -74,6 +75,7 @@ function ResponsiveAppBar() {
               <MenuIcon />
             </IconButton>
             <Menu
+            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -88,7 +90,7 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none"},
               }}
             >
               {/* -------------------------------------links mode mobile--------------------------------------------------- */}
@@ -102,35 +104,54 @@ function ResponsiveAppBar() {
                 </Button>
               </a>
               <a style={{ textDecoration: "none" }} href="#aboutMe">
-              <Button
-                sx={{ width: "100%" }}
-                variant="text"
-                onClick={handleCloseNavMenu}
-              >
-                <FormattedMessage id="navbar-about" defaultMessage="About me" />
-              </Button>
+                <Button
+                  sx={{ width: "100%" }}
+                  variant="text"
+                  onClick={handleCloseNavMenu}
+                >
+                  <FormattedMessage
+                    id="navbar-about"
+                    defaultMessage="About me"
+                  />
+                </Button>
               </a>
               <a style={{ textDecoration: "none" }} href="#skills">
-              <Button
-                sx={{ width: "100%" }}
-                variant="text"
-                onClick={handleCloseNavMenu}
-              >
-                <FormattedMessage id="navbar-skills" defaultMessage="Skills" />
-              </Button>
+                <Button
+                  sx={{ width: "100%" }}
+                  variant="text"
+                  onClick={handleCloseNavMenu}
+                >
+                  <FormattedMessage
+                    id="navbar-skills"
+                    defaultMessage="Skills"
+                  />
+                </Button>
               </a>
               <a style={{ textDecoration: "none" }} href="#projects">
-              <Button
-                sx={{ width: "100%" }}
-                variant="text"
-                onClick={handleCloseNavMenu}
-              >
-                <FormattedMessage
-                  id="navbar-projects"
-                  defaultMessage="Projects"
-                />
-              </Button>
+                <Button
+                  sx={{ width: "100%" }}
+                  variant="text"
+                  onClick={handleCloseNavMenu}
+                >
+                  <FormattedMessage
+                    id="navbar-projects"
+                    defaultMessage="Projects"
+                  />
+                </Button>
               </a>
+              <Link
+                to={"https://www.linkedin.com/in/alan-erriu-498139195/"}
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <Button
+                  sx={{ width: "100%" }}
+                  variant="text"
+                  onClick={handleCloseNavMenu}
+                >
+                  My linkedin
+                </Button>
+              </Link>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <MenuItem onClick={closeMenuAndChangeToEn}>
                   <Usa />
@@ -154,11 +175,11 @@ function ResponsiveAppBar() {
               letterSpacing: "3rem",
               color: "inherit",
               textDecoration: "none",
-              p:"5px"
+              p: "5px",
             }}
           >
             <a style={{ textDecoration: "none" }} href="#home">
-            <LogoAE />
+              <LogoAE />
             </a>
             {/*--------------------- Links mode  desktop---------------------------------------------------------------------------- */}
           </Typography>

@@ -2,12 +2,14 @@
   
     "navbar-home": "Home",
     "navbar-about": "About me",
-    "navbar-skills": "Skills",
+    "navbar-skills": "Tech Skills",
     "navbar-projects": "Projects",
     
   
     "home-title": "Hi, i am Alan Erriu",
     "home-subtitle": "Front-End Developer</>Programmer",
+    "btn_dowload-mycv":"Dowload My CV",
+    "btn_linkedin":"My Linkedin",
 
   
     "about-title": "About me",
@@ -16,17 +18,14 @@
   
     "skills-title": "Tech Skills",
     "filter-all": "All",
-    "filter-programming": "Programming",
-    "filter-libraries": "Frameworks/Libraries",
-    "filter-design": "Design",
-    "filter-database": "Database",
-    "tooltip-basic": "Basic",
-    "tooltip-intermediate": "Intermediate",
-    "tooltip-advanced": "Advanced",
+    "filter-backend": "Back-End",
+    "filter-frontend": "Front-End",
+    "filter-database": "Data-Base",
+ 
   
-    "work-title": "My work",
-    "project-technologies": "Used technologies:",
-    "project-site-btn": "Visit Site",
+    "project-title": "My projects",
+    "project-technologies": "Used technologies ↓",
+    "project-site-btn": "Site",
     "project-code-btn": "Code",
     "project-title-aeimportaciones": "AE.IMPORTS",
     "project-description-aeimportaciones": "Pc peripherals and accessories store.",

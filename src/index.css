@@ -23,4 +23,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   background-attachment: fixed;
+  min-height:95vh;
+}
+
+.footer{
+  min-height: 6vh;
 }

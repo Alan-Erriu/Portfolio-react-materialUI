@@ -45,7 +45,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "Reac.js, Tailwindcss, Context, GithubPages"
+   "Reac.js, Tailwindcss, Context,  GithubPages."
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/E-Commerce-Tailwind-React",

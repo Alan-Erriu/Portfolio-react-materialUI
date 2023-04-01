@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FormattedMessage } from "react-intl";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
           marginTop: "10rem",
           justifyContent: "center",
           flexDirection: "column",
-          width: { xs: "90%", md: "600px" },
+          width: { xs: "70%", md: "600px" },
         }}
       >
         <Typography
@@ -22,7 +23,7 @@ const Home = () => {
           variant="h1"
           color="gray"
           fontSize={{
-            xs: "50px",
+            xs: "30px",
             sm: "50px",
             md: "50px",
             lg: "60px",
@@ -60,14 +61,25 @@ const Home = () => {
             mt: "10px",
           }}
         >
-          <a style={{textDecoration:"none"}} href="cv Alan Erriu.pdf"
-          download="cv Alan Erriu.pdf">
+          <a
+            style={{ textDecoration: "none" }}
+            href="cv Alan Erriu.pdf"
+            download="cv Alan Erriu.pdf"
+          >
             <Button
               sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
               variant="contained"
               color="success"
             >
-              <Typography color={"white"}>Dowload my cv</Typography>
+              <Typography
+                fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
+                color={"white"}
+              >
+                <FormattedMessage
+                  id="btn_dowload-mycv"
+                  defaultMessage="Dowload My CV"
+                />
+              </Typography>
             </Button>
           </a>
           <Button
@@ -75,7 +87,21 @@ const Home = () => {
             variant="contained"
             color="success"
           >
-            <Typography color={"white"}>My linkedin</Typography>
+          <Link
+            to={"https://www.linkedin.com/in/alan-erriu-498139195/"}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Typography
+              fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
+              color={"white"}
+            >
+              <FormattedMessage
+                id="btn_linkedin"
+                defaultMessage="My Linkedin"
+              />
+            </Typography>
+          </Link>
           </Button>
         </Box>
       </Box>

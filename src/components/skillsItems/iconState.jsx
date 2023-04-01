@@ -1,4 +1,3 @@
-
 //all image url from icons
 const imgReat =
   "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg";
@@ -24,104 +23,112 @@ const imgDjango =
 const imgPostgre =
   "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg";
 
-
 // all icons and titles
- const allIcons = [
-    {
-      img: imgJs,
-      text: "JavaScript",
-    },
-    {
-      img: imgTS,
-      text: "TypeScript",
-    },
-    {
-      img: imgMongodb,
-      text: "MongoDB",
-    },
-    {
-      img: imgPy,
-      text: "Python",
-    },
-    {
-      img: imgExpress,
-      text: "Express",
-    },
-    {
-      img: imgNodeJs,
-      text: "Node.js",
-    },
-    {
-      img: imgTailwind,
-      text: "Tailwindcss",
-    },
-    {
-      img: imgMaterialUi,
-      text: "MaterialUI",
-    },
-    {
-      img: imgRedux,
-      text: "Redux",
-    },
-    {
-      img: imgDjango,
-      text: "Django",
-    },
-    {
-      img: imgPostgre,
-      text: "Postgre",
-    },
-  ];
-//only icons and titles for backEnd  
-  const backEndIcons = [
-    {
-      img: imgJs,
-      text: "JavaScript",
-    },
-    {
-      img: imgTS,
-      text: "TypeScript",
-    },
-    {
-      img: imgPy,
-      text: "Python",
-    },
-    {
-      img: imgExpress,
-      text: "Express",
-    },
-    {
-      img: imgDjango,
-      text: "Django",
-    },
-    {
-      img: imgPostgre,
-      text: "Postgre",
-    },
-  ];
-  //only icons and titles for frontEnd  
-  const frontEndIcons = [
-    {
-      img: imgJs,
-      text: "JavaScript",
-    },
-    {
-      img: imgTS,
-      text: "TypeScript",
-    },
-    {
-      img: imgTailwind,
-      text: "Tailwindcss",
-    },
-    {
-      img: imgMaterialUi,
-      text: "MaterialUI",
-    },
-    {
-      img: imgRedux,
-      text: "Redux",
-    },
- 
-  
-  ];
-  export {frontEndIcons,backEndIcons,allIcons}
+const allIcons = [
+  {
+    img: imgJs,
+    text: "JavaScript",
+  },
+  {
+    img: imgTS,
+    text: "TypeScript",
+  },
+  {
+    img: imgMongodb,
+    text: "MongoDB",
+  },
+  {
+    img: imgPy,
+    text: "Python",
+  },
+  {
+    img: imgExpress,
+    text: "Express",
+  },
+  {
+    img: imgNodeJs,
+    text: "Node.js",
+  },
+  {
+    img: imgTailwind,
+    text: "Tailwindcss",
+  },
+  {
+    img: imgMaterialUi,
+    text: "MaterialUI",
+  },
+  {
+    img: imgRedux,
+    text: "Redux",
+  },
+  {
+    img: imgDjango,
+    text: "Django",
+  },
+  {
+    img: imgPostgre,
+    text: "Postgre",
+  },
+];
+//only icons and titles for backEnd
+const backEndIcons = [
+  {
+    img: imgJs,
+    text: "JavaScript",
+  },
+  {
+    img: imgTS,
+    text: "TypeScript",
+  },
+  {
+    img: imgPy,
+    text: "Python",
+  },
+  {
+    img: imgExpress,
+    text: "Express",
+  },
+  {
+    img: imgDjango,
+    text: "Django",
+  },
+  {
+    img: imgNodeJs,
+    text: "Node.js",
+  },
+];
+//only icons and titles for frontEnd
+const frontEndIcons = [
+  {
+    img: imgJs,
+    text: "JavaScript",
+  },
+  {
+    img: imgTS,
+    text: "TypeScript",
+  },
+  {
+    img: imgTailwind,
+    text: "Tailwindcss",
+  },
+  {
+    img: imgMaterialUi,
+    text: "MaterialUI",
+  },
+  {
+    img: imgRedux,
+    text: "Redux",
+  },
+];
+const dataBaseIcons = [
+  {
+    img: imgPostgre,
+    text: "Postgre",
+  },
+
+  {
+    img: imgMongodb,
+    text: "MongoDB",
+  },
+];
+export { frontEndIcons, backEndIcons, allIcons, dataBaseIcons };
