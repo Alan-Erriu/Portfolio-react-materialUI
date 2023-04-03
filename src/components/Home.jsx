@@ -4,24 +4,24 @@ import Typography from "@mui/material/Typography";
 import { FormattedMessage } from "react-intl";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import Arrow from "./homeitems/Arrow";
 const Home = () => {
   return (
     <Box id="home" sx={{ display: "flex", justifyContent: "center" }}>
       <Box
         sx={{
           display: "flex",
-          marginTop: "10rem",
+          marginTop: "18rem",
           justifyContent: "center",
           flexDirection: "column",
-          width: { xs: "70%", md: "600px" },
+          width: { xs: "70%", md: "800px" },
         }}
       >
         <Typography
           textAlign={"center"}
           fontFamily={"fantasy"}
           variant="h1"
-          color="gray"
+          color="white"
           fontSize={{
             xs: "30px",
             sm: "50px",
@@ -30,22 +30,19 @@ const Home = () => {
             xl: "70px",
           }}
         >
-          <FormattedMessage
-            id="home-title"
-            defaultMessage="Hi, i am Alan Erriu"
-          />
+          <FormattedMessage id="home-title" defaultMessage="Alan Erriu" />
         </Typography>
         <Typography
           textAlign={"center"}
           fontFamily={"fantasy"}
           variant="h3"
-          color="gray"
+          color="white"
           fontSize={{
-            xs: "25px",
-            sm: "30px",
-            md: "30px",
-            lg: "40px",
-            xl: "50px",
+            xs: "16px",
+            sm: "18px",
+            md: "20px",
+            lg: "30px",
+            xl: "40px",
           }}
         >
           <FormattedMessage
@@ -72,7 +69,8 @@ const Home = () => {
               color="success"
             >
               <Typography
-                fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
+                fontFamily={"inherit"}
+                fontSize={{ xs: "8px", sm: "12px", md: "14px" }}
                 color={"white"}
               >
                 <FormattedMessage
@@ -87,23 +85,27 @@ const Home = () => {
             variant="contained"
             color="success"
           >
-          <Link
-            to={"https://www.linkedin.com/in/alan-erriu-498139195/"}
-            target="_blank"
-            style={{ textDecoration: "none" }}
-          >
-            <Typography
-              fontSize={{ xs: "12px", sm: "14px", md: "16px" }}
-              color={"white"}
+            <Link
+              to={"https://www.linkedin.com/in/alan-erriu-498139195/"}
+              target="_blank"
+              style={{ textDecoration: "none" }}
             >
-              <FormattedMessage
-                id="btn_linkedin"
-                defaultMessage="My Linkedin"
-              />
-            </Typography>
-          </Link>
+              <Typography
+                fontSize={{ xs: "8px", sm: "12px", md: "14px" }}
+                color={"white"}
+              >
+                <FormattedMessage
+                  id="btn_linkedin"
+                  defaultMessage="My Linkedin"
+                />
+              </Typography>
+            </Link>
           </Button>
         </Box>
+        <div className="container">
+
+          <Arrow/>
+        </div>
       </Box>
     </Box>
   );

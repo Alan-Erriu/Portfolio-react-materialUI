@@ -4,9 +4,10 @@
     "navbar-about": "About me",
     "navbar-skills": "Tech Skills",
     "navbar-projects": "Projects",
+    "navbar-linkedin":"My linkedin",
     
   
-    "home-title": "Hi, i am Alan Erriu",
+    "home-title": "Alan Erriu",
     "home-subtitle": "Front-End Developer</>Programmer",
     "btn_dowload-mycv":"Dowload My CV",
     "btn_linkedin":"My Linkedin",
@@ -14,7 +15,8 @@
   
     "about-title": "About me",
     "about-first-paragraph": "Hi! My name is Alan Erriu, I am a 28 years old Software and Web Developer based in Buenos Aires, Argentina.",
-   
+    "about-second-paragraph":"My goal is to continue training as a full stack web developer and be part of a professional team where I can develop my acquired skills. I usually work with react.js, materialUI, node.js and similar technologies.",
+    "about-third-paragraph":"I consider that my strengths lie in research, the ease of adapting to my colleagues, and I enjoy learning new technologies a lot.",
   
     "skills-title": "Tech Skills",
     "filter-all": "All",
@@ -45,6 +47,6 @@
     "label-message": "Message",
     "send-btn": "Send",
   
-    "footer-design": "Designed in",
-    "footer-development": "Developed in"
+    "footer-update": "Last update April--2023"
+
   }

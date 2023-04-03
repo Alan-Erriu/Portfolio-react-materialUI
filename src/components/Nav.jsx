@@ -149,7 +149,10 @@ function ResponsiveAppBar() {
                   variant="text"
                   onClick={handleCloseNavMenu}
                 >
-                  My linkedin
+                  <FormattedMessage
+                    id="navbar-linkedin"
+                    defaultMessage="My linkedin"
+                  />
                 </Button>
               </Link>
               <Box sx={{ display: "flex", justifyContent: "center" }}>

@@ -1,5 +1,7 @@
+import React from "react";
+
 //all image url from icons
-const imgReat =
+const imgReact =
   "https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg";
 const imgJs =
   "https://profilinator.rishav.dev/skills-assets/javascript-original.svg";
@@ -22,9 +24,14 @@ const imgDjango =
   "https://profilinator.rishav.dev/skills-assets/django-original.svg";
 const imgPostgre =
   "https://profilinator.rishav.dev/skills-assets/postgresql-original-wordmark.svg";
-
+const imgMySQL =
+  "https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg";
+const imgHtml5="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
+const imgCss3= "https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
 // all icons and titles
 const allIcons = [
+  { img: imgReact, text: "React" },
+  { img: imgMySQL, text: "My SQL" },
   {
     img: imgJs,
     text: "JavaScript",
@@ -50,6 +57,14 @@ const allIcons = [
     text: "Node.js",
   },
   {
+    img:imgHtml5,
+    text:"HTML5"
+  },
+  {
+    img:imgCss3,
+    text:"CSS3"
+  },
+  {
     img: imgTailwind,
     text: "Tailwindcss",
   },
@@ -64,10 +79,6 @@ const allIcons = [
   {
     img: imgDjango,
     text: "Django",
-  },
-  {
-    img: imgPostgre,
-    text: "Postgre",
   },
 ];
 //only icons and titles for backEnd
@@ -99,6 +110,7 @@ const backEndIcons = [
 ];
 //only icons and titles for frontEnd
 const frontEndIcons = [
+  { img: imgReact, text: "React" },
   {
     img: imgJs,
     text: "JavaScript",
@@ -116,16 +128,20 @@ const frontEndIcons = [
     text: "MaterialUI",
   },
   {
+    img:imgHtml5,
+    text:"HTML5"
+  },
+  {
+    img:imgCss3,
+    text:"CSS3"
+  },
+  {
     img: imgRedux,
     text: "Redux",
   },
 ];
 const dataBaseIcons = [
-  {
-    img: imgPostgre,
-    text: "Postgre",
-  },
-
+  { img: imgMySQL, text: "My SQL" },
   {
     img: imgMongodb,
     text: "MongoDB",

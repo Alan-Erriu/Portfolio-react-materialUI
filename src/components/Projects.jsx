@@ -11,7 +11,7 @@ const Projects = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        mt: "8rem",
+        mt: "10rem",
         pt: "5rem",
       }}
     >

@@ -41,6 +41,7 @@ export const Skills = () => {
             justifyContent:"center",
             mb: "1rem",
             width: { xs: "90%" },
+            height:{xs:"40px",sm:"45px"}
           }}
         >
           {/* allIcons is a new state now ---------------------*/}
@@ -103,6 +104,7 @@ export const Skills = () => {
         <Box
           sx={{
             width: { xs: "90%", md: "600px" },
+            
           }}
         >
           <Grid
@@ -123,7 +125,7 @@ export const Skills = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     xs: "colunm",
-                    mt: "1rem",
+                    mt: "5px",
                   }}
                 >
                   <SkillsIcons desc={desc} />

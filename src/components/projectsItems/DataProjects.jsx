@@ -91,7 +91,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "React.js, MaterialUI, React Router, React intl, Photoshop, netlify"
+   "React.js, MaterialUI, React Router, React intl, Photoshop, netlify, ts-particles"
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/Portfolio-react-materialUI",

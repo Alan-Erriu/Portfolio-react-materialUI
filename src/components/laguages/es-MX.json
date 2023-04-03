@@ -4,16 +4,20 @@
     "navbar-about":"Sobre mi",
     "navbar-skills":"Tecnologías",
     "navbar-projects":"Proyectos",
+    "navbar-linkedin":"Mi linkedin",
  
 
-  "home-title": "Hola soy Alan Erriu",
+  "home-title": "Alan Erriu",
   "home-subtitle": "Desarrollador Front-End</>Programador",
   "btn_dowload-mycv":"Descargar Mi CV",
   "btn_linkedin":"Linkedin",
   
 
   "about-title": "Sobre mi",
-  "about-first-paragraph": "Hola! Mi nombre es Alan Erriu, soy un Desarrollador FronT-End de 28 años de edad, residiendo en Buenos Aires, Argentina.",
+  "about-first-paragraph": "Hola, mi nombre es Alan Erriu y soy un Desarrollador Front-End de 28 años de edad, residiendo en Buenos Aires, Argentina.",
+  "about-second-paragraph": "Mi objetivo es seguir formándome como desarrollador web full stack y ser parte de un equipo profesional en el que pueda desarrollar mis habilidades adquiridas. Normalmente, trabajo con react.js, materialUI, node.js y tecnologías similares.",
+  "about-third-paragraph": "Considero que mis puntos fuertes están en la investigación, la facilidad de adaptarme a mis compañeros y disfruto mucho al aprender tecnologías nuevas.",
+  
   
   "skills-title": "Tecnologías",
   "filter-all": "Todos",
@@ -35,7 +39,6 @@
   "project-title-portfolio": "Portafolio personal",
   "project-description-portfolio": "Esta página web.",
 
+  "footer-update": "Última actualización Abril--2023"
 
-  "footer-design": "Diseñado en",
-  "footer-development": "Desarrollado en"
 }
