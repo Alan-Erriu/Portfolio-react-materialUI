@@ -103,8 +103,7 @@ const Home = () => {
           </Button>
         </Box>
         <div className="container">
-
-          <Arrow/>
+          <Arrow />
         </div>
       </Box>
     </Box>

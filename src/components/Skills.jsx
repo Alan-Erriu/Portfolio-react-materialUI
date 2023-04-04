@@ -20,11 +20,11 @@ export const Skills = () => {
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
-          mt: "10rem",
+         
          
         }}
       >
-        <Box sx={{ mb: "1rem" }}>
+        <Box sx={{ mb: "3rem",pt:"4rem" }}>
           <Typography
             variant="h3"
             fontSize={{ xs: "30px", md: "60px" }}

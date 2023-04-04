@@ -7,7 +7,7 @@ import { FormattedMessage } from "react-intl";
 const About = () => {
   return (
     <Box>
-      <Grid sx={{ mb: "15rem" }} container>
+      <Grid sx={{ mb: "20rem",mt:"2rem" }} container>
         <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
           <Box
             sx={{

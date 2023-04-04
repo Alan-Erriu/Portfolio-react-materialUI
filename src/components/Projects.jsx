@@ -15,19 +15,18 @@ const Projects = () => {
         pt: "5rem",
       }}
     >
-      <Typography
-        sx={{ mb: "3rem" }}
-        variant="h2"
-        color="gray"
-        fontSize="50px"
-      >
-         <FormattedMessage
-            id="project-title"
-            defaultMessage="My projects"
-          />
+      <Typography variant="h2" color="gray" fontSize="50px">
+        <FormattedMessage id="project-title" defaultMessage="My projects" />
         <hr />
       </Typography>
-      <Box sx={{display:"flex",flexDirection:"column", justifyContent:"center",alignItems:"center"}}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         {DataProjects.map((project) => (
           <CardProjects data={project} key={project.id} />
         ))}
