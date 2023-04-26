@@ -22,7 +22,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "Reac.js, MaterialUI, Reducer, React Router, Context, Photoshop, GithubPages"
+   "React.js, MaterialUI, Reducer, React-Router, Context, Photoshop, GithubPages"
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/Ecommerce-aeimportaciones-react-materialui",
@@ -45,7 +45,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "Reac.js, Tailwindcss, Context,  GithubPages."
+   "React.js, Tailwindcss, Context,  GithubPages."
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/E-Commerce-Tailwind-React",
@@ -68,7 +68,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "Reac.js, MaterialUI, React Router, Node.js, Express, MongoDB, RenderHost, github, netlifyHost"
+   "React.js, MaterialUI, React-Router, Node.js, Express, MongoDB, RenderHost, Github, Netlify"
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/Crud-mongo-express-node-react",
@@ -91,7 +91,7 @@ const DataProjects = [
       />
     ),
     technologies: (
-   "React.js, MaterialUI, React Router, React intl, Photoshop, netlify, ts-particles"
+   "React.js, MaterialUI, React-Router, React intl, Photoshop, Netlify, ts-particles"
     ),
     linkToCode:
       "https://github.com/Alan-Erriu/Portfolio-react-materialUI",
