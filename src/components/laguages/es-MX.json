@@ -30,6 +30,8 @@
   "project-technologies": "Tecnologías utilizadas ↓",
   "project-site-btn": "Sitio",
   "project-code-btn": "Código",
+  "project-title-mantenimiento": "Mantenimiento residencial",
+  "project-description-mantenimiento": "Web de servicios para el mantenimiento del hogar: Pintura, plomería, etc.",
   "project-title-aeimportaciones": "AE.IMPORTACIONES",
   "project-description-aeimportaciones": "Tienda de periféricos y accesorios para pc.",
   "project-title-fontendMentor": "Tienda digital React",
@@ -39,6 +41,6 @@
   "project-title-portfolio": "Portafolio personal",
   "project-description-portfolio": "Esta página web.",
 
-  "footer-update": "Última actualización Abril--2023"
+  "footer-update": "Última actualización Mayo--2023"
 
 }

@@ -29,6 +29,8 @@
     "project-technologies": "Used technologies ↓",
     "project-site-btn": "Site",
     "project-code-btn": "Code",
+    "project-title-mantenimiento": "Residential maintenance",
+    "project-description-mantenimiento": "Website for home maintenance services: Painting, plumbing, etc.",
     "project-title-aeimportaciones": "AE.IMPORTS",
     "project-description-aeimportaciones": "Pc peripherals and accessories store.",
     "project-title-fontendMentor": "E-Commerce React Challenge",
@@ -47,6 +49,6 @@
     "label-message": "Message",
     "send-btn": "Send",
   
-    "footer-update": "Last update April--2023"
+    "footer-update": "Last update May--2023"
 
   }

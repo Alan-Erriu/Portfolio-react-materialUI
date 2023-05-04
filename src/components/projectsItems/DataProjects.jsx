@@ -2,12 +2,36 @@ import aeimportaciones from "../assets/svg/img/4.jpg";
 import sneakers from "../assets/svg/img/sneakers.jpg";
 import crudMern from "../assets/svg/img/crudMern.jpg";
 import portfolio from "../assets/svg/img/portfolio.jpg";
+import maintenance from "../assets/svg/img/mantenimiento.jpg";
 import { FormattedMessage } from "react-intl";
 
 
 const DataProjects = [
   {
     id: "1",
+    title: (
+      <FormattedMessage
+        id="project-title-mantenimiento"
+        defaultMessage="Residential maintenance"
+      />
+    ),
+    img: (maintenance)  ,
+    description: (
+      <FormattedMessage
+        id="project-description-mantenimiento"
+        defaultMessage="Website for home maintenance services: Painting, plumbing, etc."
+      />
+    ),
+    technologies: (
+   "React.js, MaterialUI, EmailJS, Github, Photoshop, Netlify"
+    ),
+    linkToCode:
+      "https://github.com/Alan-Erriu/react-servicio-de-mantenimiento-Damian",
+    linkToDeploy:
+      "https://mantenimiento-residencial.netlify.app/",
+  },
+  {
+    id: "2",
     title: (
       <FormattedMessage
         id="project-title-aeimportaciones"
@@ -30,7 +54,7 @@ const DataProjects = [
       "https://alan-erriu.github.io/Ecommerce-aeimportaciones-react-materialui/",
   },
   {
-    id: "2",
+    id: "3",
     title: (
       <FormattedMessage
         id="project-title-fontendMentor"
@@ -53,7 +77,7 @@ const DataProjects = [
       "https://alan-erriu.github.io/E-Commerce-Tailwind-React/",
   },
   {
-    id: "3",
+    id: "4",
     title: (
       <FormattedMessage
         id="project-title-crud"
@@ -76,7 +100,7 @@ const DataProjects = [
       "https://aeimportaciones.netlify.app/",
   },
   {
-    id: "4",
+    id: "5",
     title: (
       <FormattedMessage
         id="project-title-portfolio"
