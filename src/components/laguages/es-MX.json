@@ -25,7 +25,8 @@
   "filter-all": "Todos",
   "filter-backend": "Back-End",
   "filter-frontend": "Front-End",
-  "filter-database": "Datos",
+  "filter-database": "CI/CD",
+  "filter-others": "Otros",
 
 
   "project-title": "Proyectos",

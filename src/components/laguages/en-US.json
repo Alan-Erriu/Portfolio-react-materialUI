@@ -25,7 +25,8 @@
     "filter-all": "All",
     "filter-backend": "Back-End",
     "filter-frontend": "Front-End",
-    "filter-database": "Data-Base",
+    "filter-database": "CI/CD",
+    "filter-others": "Others",
  
   
     "project-title": "My projects",

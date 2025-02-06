@@ -12,6 +12,12 @@ const imgNet =
   "https://profilinator.rishav.dev/skills-assets/dot-net-original-wordmark.svg";
 const imgCSharp =
   "https://profilinator.rishav.dev/skills-assets/csharp-original.svg";
+const imgGit =
+  "https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg";
+const imgJenkins =
+  "https://profilinator.rishav.dev/skills-assets/jenkins-icon.svg";
+const imgDocker =
+  "https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg";
 // all icons and titles
 const allIcons = [
   {
@@ -22,13 +28,27 @@ const allIcons = [
     img: imgCSharp,
     text: "C#",
   },
-  { img: sqlServer, text: "SQL Server" },
-  { img: imgReact, text: "React" },
+  { img: sqlServer, 
+    text: "SQL Server" },
+  { img: imgReact,
+     text: "React" },
 
   {
     img: imgJs,
     text: "JavaScript",
   },
+  {
+    img:imgGit,
+    text : "Git"
+  },{
+    img:imgDocker,
+    text:"Docker"
+  },
+  {
+    img:imgJenkins,
+    text:"Jenkins"
+  }
+
 ];
 //only icons and titles for backEnd
 const backEndIcons = [
@@ -40,6 +60,7 @@ const backEndIcons = [
     img: imgCSharp,
     text: "C#",
   },
+  { img: sqlServer, text: "SQL Server" }
 ];
 //only icons and titles for frontEnd
 const frontEndIcons = [
@@ -49,7 +70,19 @@ const frontEndIcons = [
     text: "JavaScript",
   },
 ];
-const dataBaseIcons = [
-  { img: sqlServer, text: "SQL Server" },
+const cicdIcons = [
+  {
+    img:imgGit,
+    text : "Git"
+  },
+  {
+    img:imgJenkins,
+    text: "Jenkins"
+  },
+  {
+    img:imgDocker,
+    text:"Docker"
+  }
 ];
-export { frontEndIcons, backEndIcons, allIcons, dataBaseIcons };
+
+export { frontEndIcons, backEndIcons, allIcons, cicdIcons };

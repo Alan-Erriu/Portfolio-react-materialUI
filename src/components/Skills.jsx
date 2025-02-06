@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import { useState } from "react";
 import { Button } from "@mui/material";
-import { frontEndIcons, backEndIcons, allIcons,dataBaseIcons } from "./skillsItems/iconState";
+import { frontEndIcons, backEndIcons, allIcons,cicdIcons } from "./skillsItems/iconState";
 import Divider from "@mui/material/Divider";
 import { FormattedMessage } from "react-intl";
 
@@ -88,7 +88,7 @@ export const Skills = () => {
           </Button>
          {/* databaseIcons is a new state now */}
           <Button
-            onClick={() => setIcons(dataBaseIcons)}
+            onClick={() => setIcons(cicdIcons)}
             sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
             variant="contained"
             color="success"
@@ -100,6 +100,7 @@ export const Skills = () => {
               <FormattedMessage id="filter-database" defaultMessage="Data-Base" />
             </Typography>
           </Button>
+          
         </Box>
         <Box
           sx={{
