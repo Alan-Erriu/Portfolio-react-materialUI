@@ -6,8 +6,8 @@ import esMX from "../laguages/es-MX.json";
 const LanguagesContext = createContext();
 
 const LanguagesProvider = ({ children }) => {
-  const [locale, setlocale] = useState("en-US");
-  const [message, setmessage] = useState(enUS);
+  const [locale, setlocale] = useState("es-MX");
+  const [message, setmessage] = useState(esMX);
 const changeLangToEs =()=>{
     setlocale("es-MX")
     setmessage(esMX)

@@ -5,6 +5,7 @@ import { FormattedMessage } from "react-intl";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Arrow from "./homeitems/Arrow";
+import { GitHub } from "@mui/icons-material";
 const Home = () => {
   return (
     <Box id="home" sx={{ display: "flex", justifyContent: "center" }}>
@@ -47,7 +48,7 @@ const Home = () => {
         >
           <FormattedMessage
             id="home-subtitle"
-            defaultMessage="Desarrollador Front-End/Programador"
+            defaultMessage="Desarrollador Back-end .Net"
           />
         </Typography>
         <Box
@@ -58,9 +59,27 @@ const Home = () => {
             mt: "10px",
           }}
         >
+          <Button
+            sx={{ mb: "1rem", boxShadow: " 0 0 0 4px", color: "black" }}
+            variant="contained"
+            color="success"
+          >
+            <Link
+              to={"https://github.com/Alan-Erriu"}
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <Typography
+                fontSize={{ xs: "8px", sm: "12px", md: "14px" }}
+                color={"white"}
+              >
+                GitHub
+              </Typography>
+            </Link>
+          </Button>
           <a
             style={{ textDecoration: "none" }}
-            href="cv Alan Erriu.pdf"
+            href="CV Alan Erriu.pdf"
             download="cv Alan Erriu.pdf"
           >
             <Button

@@ -8,15 +8,18 @@
     
   
     "home-title": "Alan Erriu",
-    "home-subtitle": "Front-End Developer</>Programmer",
+    "home-subtitle": "Backend Developer .Net </>",
     "btn_dowload-mycv":"Dowload My CV",
     "btn_linkedin":"My Linkedin",
 
   
-    "about-title": "About me",
-    "about-first-paragraph": "Hi! My name is Alan Erriu, I am a 28 years old Software and Web Developer based in Buenos Aires, Argentina.",
-    "about-second-paragraph":"My goal is to continue training as a full stack web developer and be part of a professional team where I can develop my acquired skills. I usually work with react.js, materialUI, node.js and similar technologies.",
-    "about-third-paragraph":"I consider that my strengths lie in research, the ease of adapting to my colleagues, and I enjoy learning new technologies a lot.",
+    "about-title": "About Me",
+"about-first-paragraph": "Hi! I'm Alan Erriu, a backend developer based in Buenos Aires, Argentina.",
+"about-second-paragraph": "I am currently part of the team at EXTRADOS Software Technology, working as a backend developer with .NET. I always prioritize agile methodologies and clear communication, which are essential for a team's success.",
+"about-third-paragraph": "My focus is on learning by creating, as reflected in my portfolio, where I showcase several GitHub projects ranging from complete applications to API solutions with .NET.",
+"about-fourth-paragraph": "My technical skills: .NET, ORM, Swagger, Web Forms, API, JWT, SQL Server, GitHub, Scrum.",
+"about-fifth-paragraph": "I have also developed and deployed several frontend applications with React, which helps me understand the needs of frontend teammates when building APIs in the backend.",
+
   
     "skills-title": "Tech Skills",
     "filter-all": "All",
@@ -29,16 +32,14 @@
     "project-technologies": "Used technologies ↓",
     "project-site-btn": "Site",
     "project-code-btn": "Code",
-    "project-title-mantenimiento": "Residential maintenance",
-    "project-description-mantenimiento": "Website for home maintenance services: Painting, plumbing, etc.",
-    "project-title-aeimportaciones": "AE.IMPORTS",
-    "project-description-aeimportaciones": "Pc peripherals and accessories store.",
-    "project-title-fontendMentor": "E-Commerce React Challenge",
-    "project-description-fontendMentor": "Men's shoe store.",
-    "project-title-crud": "CRUD MERN STACK",
-    "project-description-crud": "Simple app to create products and save them in a database.",
-    "project-title-portfolio": "Personal Portfolio",
-    "project-description-portfolio": "This personal portfolio site.",
+    "project-title-API-Ecommerce-ExtradosStore": "Ecommerce API",
+    "project-description-API-Ecommerce-ExtradosStore": "User registration, token-based login, roles, CRUD operations for users, products, and offers with expiration dates, timezone handling.",
+    "project-title-WebForm-CRUD": "CRUD in Web Form",
+    "project-description-WebForm-CRUD": "User registration and a simple login, complete CRUD for employees.",
+    "project-title-mantenimiento": "Residential Maintenance",
+    "project-description-mantenimiento": "Service website for home maintenance: Painting, plumbing, etc.",
+
+  
     
   
     "contact-title": "Get in touch",
@@ -49,6 +50,6 @@
     "label-message": "Message",
     "send-btn": "Send",
   
-    "footer-update": "Last update May--2023"
+    "footer-update": "Last update December--2024"
 
   }

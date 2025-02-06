@@ -8,16 +8,18 @@
  
 
   "home-title": "Alan Erriu",
-  "home-subtitle": "Desarrollador Front-End</>Programador",
+  "home-subtitle": "Desarrollador Backend .Net </>",
   "btn_dowload-mycv":"Descargar Mi CV",
   "btn_linkedin":"Linkedin",
   
 
-  "about-title": "Sobre mi",
-  "about-first-paragraph": "Hola, mi nombre es Alan Erriu y soy un Desarrollador Front-End de 28 años de edad, residiendo en Buenos Aires, Argentina.",
-  "about-second-paragraph": "Mi objetivo es seguir formándome como desarrollador web full stack y ser parte de un equipo profesional en el que pueda desarrollar mis habilidades adquiridas. Normalmente, trabajo con react.js, materialUI, node.js y tecnologías similares.",
-  "about-third-paragraph": "Considero que mis puntos fuertes están en la investigación, la facilidad de adaptarme a mis compañeros y disfruto mucho al aprender tecnologías nuevas.",
   
+    "about-title": "Sobre mí",
+    "about-first-paragraph": "¡Hola! Soy Alan Erriu, desarrollador backend residiendo en Buenos Aires, Argentina.",
+    "about-second-paragraph": "En la actualidad, soy parte del equipo de EXTRADOS Software Technology, desempeñándome como desarrollador backend con .NET. Siempre utilizando metodologías ágiles (Scrum) y una buena comunicación, aspectos esenciales para el buen desempeño de un equipo.",
+    "about-third-paragraph": "Mi enfoque se centra en aprender creando, y esto se refleja en mi portafolio, donde destaco varios proyectos en GitHub que abarcan desde aplicaciones completas hasta soluciones API con .net.",
+    "about-fourth-paragraph":"Mis habilidades técnicas: .Net, ORM, swagger, web form, API, JWT, SQL Server, GitHub, Scrum.",
+    "about-fifth-paragraph" :"También desarrollé y desplegué varias aplicaciones frontend con React, lo que me ayuda a entender perfectamente las necesidades de mis compañeros frontend desde las APIs en el backend.",
   
   "skills-title": "Tecnologías",
   "filter-all": "Todos",
@@ -30,17 +32,14 @@
   "project-technologies": "Tecnologías utilizadas ↓",
   "project-site-btn": "Sitio",
   "project-code-btn": "Código",
+  "project-title-API-Ecommerce-ExtradosStore": "Ecommerce API",
+  "project-API-Ecommerce-ExtradosStore": "Registro de usuarios, login con token, Roles, ABM de usuarios, productos y ofertas con fecha de expiración, manejo de huzo horario.",
+  "project-title-WebForm-CRUD": "ABM en web Form",
+  "project-description-WebForm-CRUD": "Registro de usuarios y un login simple, ABM completo de empleados.",
   "project-title-mantenimiento": "Mantenimiento residencial",
   "project-description-mantenimiento": "Web de servicios para el mantenimiento del hogar: Pintura, plomería, etc.",
-  "project-title-aeimportaciones": "AE.IMPORTACIONES",
-  "project-description-aeimportaciones": "Tienda de periféricos y accesorios para pc.",
-  "project-title-fontendMentor": "Tienda digital React",
-  "project-description-fontendMentor": "Tienda de zapatillas para hombres.",
-  "project-title-crud": "CRUD MERN STACK",
-  "project-description-crud": "Aplicación para crear productos y almacenarlos en una base de datos.",
-  "project-title-portfolio": "Portafolio personal",
-  "project-description-portfolio": "Esta página web.",
+ 
 
-  "footer-update": "Última actualización Mayo--2023"
+  "footer-update": "Última actualización Diciembre--2024"
 
 }

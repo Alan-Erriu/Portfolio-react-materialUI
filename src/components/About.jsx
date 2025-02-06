@@ -7,7 +7,7 @@ import { FormattedMessage } from "react-intl";
 const About = () => {
   return (
     <Box>
-      <Grid sx={{ mb: "20rem",mt:"2rem" }} container>
+      <Grid sx={{ mb: "20rem", mt: "2rem" }} container>
         <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
           <Box
             sx={{
@@ -23,7 +23,7 @@ const About = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={9} xl={9}>
           <Box
-          id="aboutMe" 
+            id="aboutMe"
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -53,7 +53,7 @@ const About = () => {
               <FormattedMessage id="about-title" defaultMessage="About me" />
             </Typography>
             <Typography
-           
+
               sx={{
                 width: "100%",
                 backgroundColor: "#0f203b",
@@ -86,6 +86,19 @@ const About = () => {
                 id="about-third-paragraph"
                 defaultMessage="I consider that my strengths lie in research, the ease of adapting to my colleagues, and I enjoy learning new technologies a lot."
               />
+              <br />
+              <br />
+              <FormattedMessage
+                id="about-fourth-paragraph"
+                defaultMessage="I consider that my strengths lie in research, the ease of adapting to my colleagues, and I enjoy learning new technologies a lot."
+              />
+              <br />
+              <br />
+              <FormattedMessage
+                id="about-fifth-paragraph"
+                defaultMessage="I consider that my strengths lie in research, the ease of adapting to my colleagues, and I enjoy learning new technologies a lot."
+              />
+
             </Typography>
           </Box>
         </Grid>
